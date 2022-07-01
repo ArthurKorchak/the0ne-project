@@ -5,7 +5,7 @@
   "homepage": "https://ArthurKorchak.github.io/the0ne-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /the0ne-projectpm"
+    "build": "parcel build src/*.html --public-url /the0ne-project/"
   },
   "repository": {
     "type": "git",

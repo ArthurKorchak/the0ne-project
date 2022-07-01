@@ -1,4 +1,4 @@
-(() => {
+  (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-menu-button]"),
     closeModalBtn_1: document.querySelector("[data-menu-close-1]"),
@@ -22,3 +22,21 @@
     refs.modal_btn.classList.toggle("is-open");
   }
 })();
+
+$(document).ready(function () {
+    $('.slider').slick({
+        dots: true,
+        arrows:false,
+        speed: 300,
+        easing:'ease',
+        infinite: true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        swipe: true,
+        touchThreshold: 7,
+        dotsClass: "slider-icons__list",
+        // appendDots:$(this).siblings('slider-icons__list'),
+    })
+});
