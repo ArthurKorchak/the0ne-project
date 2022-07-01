@@ -125,7 +125,7 @@
                                     alt="arrow" />
                     </picture>
                    <div class="header__buynowd">
-                        <button class="button__buynowd" name="Buy nowd">Buy now
+                        <button class="button__buynowd" data-modald-contacts-open name="Buy nowd">Buy now
                             <svg class="button__vectord" width="10px" height="10px">
                                 <use class="button__vectoricon" href="./images/icons.svg#icon-vector"></use>
                             </svg>
@@ -149,6 +149,89 @@
                         </li>
                     </ul>
                     </div>
+        <div class="contacts-backdrop contacts-backdrop--hidden" data-contacts-modald>
+    <div class="contacts-modal">
+      <button
+        class="contacts-modal__button"
+        type="button"
+        data-modald-contacts-close>
+        <svg width="11" height="11">
+          <use href="./images/icons.svg#icon-close-contacts"></use>
+        </svg>
+      </button>
+      <form class="callback-form">
+        <strong class="callback-form__title"
+          >Leave your contacts and we will call you back</strong
+        >
+        <label class="callback-form__lable" for="name">Name</label>
+        <div class="callback-form__field">
+          <input
+            class="callback-form__input"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+          <svg class="callback-form__input-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-person-callback-form"></use>
+          </svg>
+        </div>
+        <label class="callback-form__lable" for="tel">Phone</label>
+        <div class="callback-form__field">
+          <input
+            class="callback-form__input"
+            type="tel"
+            name="tel"
+            id="tel"
+            required
+          />
+          <svg class="callback-form__input-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone-callback-form"></use>
+          </svg>
+        </div>
+        <label class="callback-form__lable" for="email">Email</label>
+        <div class="callback-form__field">
+          <input
+            class="callback-form__input"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+          <svg class="callback-form__input-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-email-callback-form"></use>
+          </svg>
+        </div>
+        <label class="callback-form__lable" for="comment">Comment</label>
+        <textarea
+          class="callback-form__comment"
+          name="comment"
+          id="comment"
+          placeholder="Type here"
+          required
+        ></textarea>
+        <label class="callback-form__checkbox">
+          <input
+            class="callback-form__checkbox-input checkbox-hidden"
+            type="checkbox"
+            name="arragement"
+            tabindex="-1"
+            required
+          />
+          <span class="callback-form__checkbox-icon" tabindex="0">
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </span>
+          <span class="callback-form__agreement-text">
+            I accept the terms and conditions of the
+            <a class="callback-form__agreement-link" href="#">Privacy Policy</a>
+          </span>
+        </label>
+        <button class="callback-form__button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
             </nav>
         </div>
     </div>
