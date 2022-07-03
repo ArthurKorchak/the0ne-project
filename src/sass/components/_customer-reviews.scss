@@ -27,31 +27,32 @@
     width: 100%;
 
     @media screen and (min-width: 1280px) {
-        padding: 37px 106px 31px 106px;
+        padding: 47px 106px 31px 106px;
     }
 
 
     @media screen and (max-width: 1279px) {
-        padding: 27px 6px 36px 6px;
+        padding: 37px 6px 36px 6px;
     }
 
     @media screen and (max-width: 767px) {
-        padding: 33px 50px 17px 50px;
+        padding: 43px 50px 17px 50px;
     }
 
 }
 
 .customer-reviews__lines {
-    background-image: repeating-linear-gradient(to bottom,
-            transparent,
-            transparent 30px,
-            #E1E1E1 30px,
-            #E1E1E1 31px);
+    // background-image: repeating-linear-gradient(to bottom,
+    //         transparent,
+    //         transparent 30px,
+    //         #E1E1E1 30px,
+    //         #E1E1E1 31px);
+    background-image: repeating-linear-gradient(0deg, #E1E1E1 0 1px, transparent 1px 31px);
 }
 
 .customer-reviews__text {
     font-weight: 500;
-    padding: 10px 0 0 0;
+    padding: 0;
     margin: 0;
 
     position: relative;
@@ -77,19 +78,19 @@
     @media screen and (min-width: 1280px) {
         font-size: 16px;
         line-height: 1.86;
-        padding: 10px 36px 0 36px;
+        padding: 0px 36px;
     }
 
     @media screen and (max-width: 1279px) {
         font-size: 14px;
         line-height: 2.16;
-        padding: 10px 50px 0 50px;
+        padding: 0px 50px;
     }
 
     @media screen and (max-width: 767px) {
         font-size: 12px;
         line-height: 2.55;
-        padding: 10px 0 0 0;
+        padding: 0;
     }
 
 }
